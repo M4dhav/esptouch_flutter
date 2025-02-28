@@ -1,4 +1,4 @@
-group 'com.smaho.eng.esptouch'
+// group 'com.smaho.eng.esptouch'
 version '1.0-SNAPSHOT'
 buildscript {
     repositories {
