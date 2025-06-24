@@ -242,7 +242,9 @@ class TaskRouteState extends State<TaskRoute> {
                 title: Text('No devices found'),
                 actions: <Widget>[
                   TextButton(
-                    onPressed: () => Navigator.of(context)..pop()..pop(),
+                    onPressed: () => Navigator.of(context)
+                      ..pop()
+                      ..pop(),
                     child: Text('OK'),
                   ),
                 ],
@@ -309,7 +311,9 @@ class TaskRouteState extends State<TaskRoute> {
                 onLongPress: copyValue(context, 'BSSID', result.bssid),
                 child: Row(
                   children: <Widget>[
-                    Text('BSSID: ', style: textTheme.bodyText1),
+                    Text(
+                      'BSSID: ',
+                    ),
                     Text(result.bssid,
                         style: TextStyle(fontFamily: 'monospace')),
                   ],
@@ -319,7 +323,9 @@ class TaskRouteState extends State<TaskRoute> {
                 onLongPress: copyValue(context, 'IP', result.ip),
                 child: Row(
                   children: <Widget>[
-                    Text('IP: ', style: textTheme.bodyText1),
+                    Text(
+                      'IP: ',
+                    ),
                     Text(result.ip, style: TextStyle(fontFamily: 'monospace')),
                   ],
                 ),
